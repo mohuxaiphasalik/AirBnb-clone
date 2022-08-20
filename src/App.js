@@ -7,7 +7,7 @@ export default function App() {
     <>
       <NavBar />
       <Hero />
-      <Card />
+      <Card img="card1.png" />
     </>
   );
 }

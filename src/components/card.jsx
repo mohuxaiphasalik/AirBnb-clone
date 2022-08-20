@@ -1,10 +1,13 @@
 import React from "react";
-import t1 from "../images/card1.png";
 import star from "../images/star.png";
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card">
-      <img src={t1} alt="" className="thumbnail" />
+      <img
+        src={require(`../images/${props.img}`)}
+        alt=""
+        className="thumbnail"
+      />
       <div className="stats">
         <img src={star} alt="" className="star" />
         <span className="rating">5</span>
